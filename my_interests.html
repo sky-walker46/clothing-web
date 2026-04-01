@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CURATOR | INTERESTED LIST</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#474747",
+              "outline": "#777777",
+              "tertiary-fixed": "#5e5e5e",
+              "on-tertiary-container": "#ffffff",
+              "on-secondary-container": "#1b1c1c",
+              "background": "#f9f9f9",
+              "primary-container": "#3b3b3b",
+              "on-background": "#1a1c1c",
+              "surface-tint": "#5e5e5e",
+              "on-error": "#ffffff",
+              "tertiary-container": "#747474",
+              "tertiary": "#3b3b3b",
+              "on-primary-container": "#ffffff",
+              "on-tertiary-fixed-variant": "#e2e2e2",
+              "on-secondary-fixed-variant": "#3c3b3b",
+              "inverse-surface": "#2f3131",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-tertiary": "#e2e2e2",
+              "error": "#ba1a1a",
+              "surface": "#f9f9f9",
+              "surface-dim": "#dadada",
+              "surface-container-low": "#f3f3f3",
+              "secondary-container": "#d6d4d3",
+              "on-primary-fixed-variant": "#e2e2e2",
+              "on-tertiary-fixed": "#ffffff",
+              "surface-container-high": "#e8e8e8",
+              "surface-variant": "#e2e2e2",
+              "on-secondary": "#ffffff",
+              "on-primary": "#e2e2e2",
+              "tertiary-fixed-dim": "#474747",
+              "outline-variant": "#c6c6c6",
+              "primary-fixed": "#5e5e5e",
+              "primary": "#000000",
+              "surface-container-highest": "#e2e2e2",
+              "on-primary-fixed": "#ffffff",
+              "inverse-primary": "#c6c6c6",
+              "inverse-on-surface": "#f1f1f1",
+              "primary-fixed-dim": "#474747",
+              "surface-container": "#eeeeee",
+              "surface-bright": "#f9f9f9",
+              "on-surface": "#1a1c1c",
+              "error-container": "#ffdad6",
+              "on-error-container": "#410002",
+              "secondary": "#5f5e5e",
+              "secondary-fixed": "#c8c6c5",
+              "secondary-fixed-dim": "#adabaa"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300">
+<div class="flex justify-between items-center w-full px-6 py-8 md:px-12 max-w-[1920px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-black dark:text-white font-['Space_Grotesk'] uppercase">
+                CURATOR
+            </div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase font-medium text-sm text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all" href="#">Collections</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase font-medium text-sm text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all" href="#">About</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-black dark:text-white hover:scale-95 transition-transform active:scale-95 duration-100">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-[1920px] mx-auto min-h-screen">
+<!-- Header Section -->
+<header class="mb-16 md:mb-24">
+<h1 class="font-headline text-5xl md:text-8xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
+                Interested<br/>
+<span class="text-on-surface-variant opacity-20">List</span>
+</h1>
+<p class="font-body text-on-surface-variant max-w-md text-sm md:text-base tracking-tight leading-relaxed">
+                A personal archive of objects currently under consideration. No transactions, just pure curation.
+            </p>
+</header>
+<!-- Bento Grid List -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 md:gap-x-12">
+<!-- Item 1: Large Featured -->
+<div class="md:col-span-8 group relative">
+<div class="aspect-[16/9] bg-surface-container-highest overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist modern metal chair in a stark concrete gallery setting with dramatic hard shadows and industrial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvqo_y7wU66zxhDtW6dGGuTKL06Beh0AIpDcJo4a4EjJ6xUtpMCfKZZg-DIeNEkRK2Lz6xFjWVqLtrHaxgXBcmxXpjzGwwTOf8QGf0BHOVAjtt5VzGxMAzDVe8AyNfvPcx1-CN0JJH05JScZo_VpsZi_46lsTV60d7DjI4JTDKdqxKXX3G36lW2nyKKjDu3xZ7D_JDBjnNaJI9t4Jg_91yYfXlsyjeUlZt93HnGzSg8StB9ADUJ8YdmR_jMl4gb_5w-x6A_u_0yaH9"/>
+<div class="absolute top-6 left-6 bg-surface-container-lowest/80 backdrop-blur-md px-4 py-1">
+<span class="font-label text-[10px] font-bold uppercase tracking-widest">Available for Curation</span>
+</div>
+</div>
+<div class="mt-6 flex flex-col md:flex-row justify-between items-start gap-4">
+<div>
+<h2 class="font-headline text-2xl font-bold uppercase tracking-tight">System 01 - Sculptural Seating</h2>
+<p class="font-body text-on-surface-variant text-sm mt-1 uppercase tracking-widest">Brutalist Aluminum / Hand Finished</p>
+</div>
+<button class="w-full md:w-auto bg-primary text-on-primary font-label text-xs font-bold uppercase py-4 px-10 hover:bg-primary-fixed transition-colors active:scale-95 duration-100">
+                        Stay Updated
+                    </button>
+</div>
+</div>
+<!-- Item 2: Vertical Small -->
+<div class="md:col-span-4 group">
+<div class="aspect-[3/4] bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sleek black architectural floor lamp against a pale gray wall with clean lines and geometric shadow patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS8g4do5V4jYe1TKDOrUngdCGZgm4H9CprVtmAPOJnuDZkipkNrJsWT5UNb7juUTpocCNvnB8sbjp2jNvFuJuXVaXEJFVv8ifpi50zrme3UQxiQh6_cX3FIHggQqDLcozJnz4YI5Kv_exRlUft0M4vL7uICJfi40jlyOiCiWBLKbBbALJmEDCPS5uLOdtoFaF2wupurf25Ao0PvEYD_mOxxBHGRVGJLzisxHM7puH4ImQq9jHip8pScja39HHxUpv6MiJR-LOkYWAS"/>
+</div>
+<div class="mt-6">
+<h2 class="font-headline text-xl font-bold uppercase tracking-tight">Linear Light 04</h2>
+<p class="font-body text-on-surface-variant text-sm mt-1 mb-6 uppercase tracking-widest">Matte Black Carbon / LED Core</p>
+<button class="w-full bg-surface-container-lowest border border-outline/10 text-primary font-label text-xs font-bold uppercase py-4 px-6 hover:bg-surface-container transition-colors active:scale-95 duration-100">
+                        Notify Me
+                    </button>
+</div>
+</div>
+<!-- Item 3: Secondary Feature -->
+<div class="md:col-span-4 md:mt-[-100px] group">
+<div class="aspect-square bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Contemporary ceramic vase with organic irregular shape on a textured stone pedestal with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIRKo_Rl6uVIh0N6YQyvKE-5av1sRmJGQ2vCUTkwNNId6PDDckS3neTlmUqHaMRAG9-8__Oh157sGLZihbJTvvejFJnhuQUta0OaGWKm_8YLfnsKKhZ-Kj7yfbaymRfmvZ22-vdLSBZ1PCVAS4eEnCAffCGqy8hECShgYEnPb0XcrPkZFdTysN3mO15CADnTSwOtcy0m67gLmD5oJKBqB_onRhZ-iF8-VJ-DL9HinkVieE1QNiBK1k51wb0Br4OuC-qnKEz2swO2RV"/>
+</div>
+<div class="mt-6">
+<h2 class="font-headline text-xl font-bold uppercase tracking-tight">Void Vessel</h2>
+<p class="font-body text-on-surface-variant text-sm mt-1 mb-6 uppercase tracking-widest">Porcelain / Raw Texture</p>
+<button class="w-full bg-surface-container-lowest border border-outline/10 text-primary font-label text-xs font-bold uppercase py-4 px-6 hover:bg-surface-container transition-colors active:scale-95 duration-100">
+                        Notify Me
+                    </button>
+</div>
+</div>
+<!-- Empty State / Suggestion -->
+<div class="md:col-span-8 md:mt-12 flex items-center justify-center bg-surface-container-low p-12 md:p-24">
+<div class="text-center max-w-sm">
+<div class="mb-6 opacity-20">
+<span class="material-symbols-outlined text-6xl">inventory_2</span>
+</div>
+<h3 class="font-headline text-lg font-bold uppercase tracking-widest mb-4">Continue Exploring</h3>
+<p class="font-body text-on-surface-variant text-sm mb-8">Add more items to your personal curation to track availability and restock updates.</p>
+<a class="inline-block border-b-2 border-primary pb-1 font-label text-xs font-bold uppercase tracking-widest hover:text-on-surface-variant transition-colors" href="#">Return to Collections</a>
+</div>
+</div>
+</div>
+<!-- Global Update Section -->
+<section class="mt-32 border-t border-outline/10 pt-20">
+<div class="max-w-2xl">
+<h4 class="font-headline text-3xl font-bold uppercase tracking-tighter mb-6">Stay updated on all selections</h4>
+<p class="font-body text-on-surface-variant mb-10 text-sm tracking-tight">Receive a single monthly dispatch regarding the status of your interested items, including limited releases and archive access.</p>
+<div class="flex flex-col md:flex-row gap-4">
+<div class="flex-grow relative">
+<input class="w-full bg-transparent border-0 border-b border-outline py-4 px-0 font-label text-xs focus:ring-0 focus:border-primary transition-colors placeholder:text-outline-variant" placeholder="EMAIL ADDRESS" type="email"/>
+</div>
+<button class="bg-primary text-on-primary font-label text-xs font-bold uppercase py-4 px-12 hover:bg-primary-fixed transition-colors active:scale-95">
+                        Subscribe
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-6 md:px-12 bg-neutral-100 dark:bg-neutral-900">
+<div class="flex flex-col md:flex-row justify-between items-start w-full gap-16">
+<div class="flex flex-col gap-8">
+<div class="text-lg font-black tracking-tighter text-black dark:text-white font-['Space_Grotesk'] uppercase">
+                    CURATOR
+                </div>
+<p class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400">
+                    © 2024 CURATOR. ALL RIGHTS RESERVED.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-6">
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">Newsletter</a>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">Contact</a>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">Instagram</a>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">TikTok</a>
+</div>
+</div>
+</footer>
+</body></html>

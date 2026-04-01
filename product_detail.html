@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#474747",
+              "outline": "#777777",
+              "tertiary-fixed": "#5e5e5e",
+              "on-tertiary-container": "#ffffff",
+              "on-secondary-container": "#1b1c1c",
+              "background": "#f9f9f9",
+              "primary-container": "#3b3b3b",
+              "on-background": "#1a1c1c",
+              "surface-tint": "#5e5e5e",
+              "on-error": "#ffffff",
+              "tertiary-container": "#747474",
+              "tertiary": "#3b3b3b",
+              "on-primary-container": "#ffffff",
+              "on-tertiary-fixed-variant": "#e2e2e2",
+              "on-secondary-fixed-variant": "#3c3b3b",
+              "inverse-surface": "#2f3131",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-tertiary": "#e2e2e2",
+              "error": "#ba1a1a",
+              "surface": "#f9f9f9",
+              "surface-dim": "#dadada",
+              "surface-container-low": "#f3f3f3",
+              "secondary-container": "#d6d4d3",
+              "on-primary-fixed-variant": "#e2e2e2",
+              "on-tertiary-fixed": "#ffffff",
+              "surface-container-high": "#e8e8e8",
+              "surface-variant": "#e2e2e2",
+              "on-secondary": "#ffffff",
+              "on-primary": "#e2e2e2",
+              "tertiary-fixed-dim": "#474747",
+              "outline-variant": "#c6c6c6",
+              "primary-fixed": "#5e5e5e",
+              "primary": "#000000",
+              "surface-container-highest": "#e2e2e2",
+              "on-primary-fixed": "#ffffff",
+              "inverse-primary": "#c6c6c6",
+              "inverse-on-surface": "#f1f1f1",
+              "primary-fixed-dim": "#474747",
+              "surface-container": "#eeeeee",
+              "surface-bright": "#f9f9f9",
+              "on-surface": "#1a1c1c",
+              "error-container": "#ffdad6",
+              "on-error-container": "#410002",
+              "secondary": "#5f5e5e",
+              "secondary-fixed": "#c8c6c5",
+              "secondary-fixed-dim": "#adabaa"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+            font-family: 'Inter', sans-serif;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-50 dark:bg-neutral-950 no-border transition-colors duration-300">
+<div class="flex justify-between items-center w-full px-6 py-8 md:px-12 max-w-[1920px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-black dark:text-white font-['Space_Grotesk']">CURATOR</div>
+<div class="hidden md:flex gap-12 items-center font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-sm">
+<a class="text-neutral-500 dark:text-neutral-400 font-medium hover:text-black dark:hover:text-white transition-all" href="#">Collections</a>
+<a class="text-neutral-500 dark:text-neutral-400 font-medium hover:text-black dark:hover:text-white transition-all" href="#">About</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="flex items-center justify-center p-2 Active: scale-95 duration-100">
+<span class="material-symbols-outlined text-black dark:text-white" data-icon="favorite">favorite</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-16 min-h-screen">
+<div class="max-w-[1920px] mx-auto px-6 md:px-12">
+<div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
+<!-- Product Image Section: Asymmetric & Borderless -->
+<div class="w-full lg:w-3/5 relative">
+<div class="bg-surface-container-highest aspect-[3/4] overflow-hidden">
+<img alt="Essential white heavyweight t-shirt" class="w-full h-full object-cover grayscale contrast-125" data-alt="Studio shot of a minimalist heavyweight white cotton t-shirt with clean lines on a neutral grey architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7TC32TojBdNabL-dW_NyODcAXoIdHmuSlN8zQlNp4wOicJFOpmh6gLDH0YWZE8Rqt_wyj8G1GjoRWDdH7ft41YtTRySG1w0uAJqMG40TBor9eZHsPrrra8e-idY6V4LJUXtqK6wQ8M8iyRH1XDjg1y4VNiXh7A_WySCDz88Q5HcnamZUnbQDGiFgVdKcobQLwOq4wTl_yP_q-DB_55GIkMCcySwUePqsPFCzFw783Yo5IQ42IYqS7NgLoInvf44JMAsNqzwSrBtoj"/>
+</div>
+<!-- Editorial Overlap Typography -->
+<div class="absolute -bottom-8 -left-4 hidden lg:block select-none pointer-events-none">
+<h1 class="font-headline text-[10rem] font-black tracking-tighter leading-none opacity-5 text-primary">ESSENTIAL</h1>
+</div>
+</div>
+<!-- Product Details Section -->
+<div class="w-full lg:w-2/5 flex flex-col pt-4">
+<div class="mb-12">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-on-surface-variant mb-4 block">DROP 01 / SERIES A</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-6 leading-[0.9]">HEAVYWEIGHT ARCHIVE TEE</h2>
+<p class="font-body text-on-surface-variant max-w-md leading-relaxed">
+                            A study in structural permanence. This piece rejects the transient nature of modern basics, focusing instead on the architectural integrity of heavyweight jersey.
+                        </p>
+</div>
+<!-- Technical Specs Table (No Borders, Spacing instead) -->
+<div class="space-y-12 mb-16">
+<div class="flex flex-col gap-2">
+<span class="font-label text-[10px] uppercase tracking-widest text-outline">Fabric</span>
+<span class="font-headline text-lg font-medium">400GSM ORGANIC COTTON JERSEY, OPEN-END SPIN.</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label text-[10px] uppercase tracking-widest text-outline">Fit</span>
+<span class="font-headline text-lg font-medium">BOXY, CROPPED TORSO, DROPPED SHOULDER ARCHITECTURE.</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label text-[10px] uppercase tracking-widest text-outline">Origin</span>
+<span class="font-headline text-lg font-medium">PRODUCED IN PORTUGAL. MILLED IN JAPAN.</span>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="mt-auto">
+<div class="mb-8">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline mb-4 block">Request Access</label>
+<input class="w-full bg-transparent border-0 border-b border-outline py-4 font-headline tracking-tighter focus:ring-0 focus:border-primary transition-colors uppercase text-sm" placeholder="YOUR@EMAIL.COM" type="email"/>
+</div>
+<button class="w-full py-6 bg-primary text-on-primary font-label font-bold uppercase tracking-widest text-sm hover:bg-primary-fixed transition-colors duration-300">
+                            INTERESTED
+                        </button>
+<p class="mt-4 font-body text-[10px] text-on-surface-variant text-center tracking-tight">
+                            BY CLICKING, YOU AGREE TO BE NOTIFIED OF THE NEXT CURATED DROP.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Asymmetric Secondary Gallery / Detail -->
+<div class="mt-40 grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-7 bg-surface-container-low p-12 md:p-24">
+<div class="max-w-md">
+<h3 class="font-headline text-3xl font-bold tracking-tighter uppercase mb-8">The Philosophy of Weight</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                            Traditional luxury is often synonymous with lightness. We challenge this by embracing the 'gravity' of high-density textiles. The 400GSM weight provides a natural drape that holds its shape regardless of movement, creating a constant silhouette.
+                        </p>
+</div>
+</div>
+<div class="md:col-span-5 aspect-square bg-surface-container-highest">
+<img alt="Macro detail of fabric texture" class="w-full h-full object-cover grayscale" data-alt="Extreme macro close-up of heavy white cotton weave, showing intricate texture and thick yarn structure with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALlxU5M7WrVbk10hTSnAK7bn0Cq7GdUOl7yUBHQfm1Y6QRhhbqPmN5BlSg8NZxvqhzCuOZgmZxG4gKGBSZBctY1S7CEfW1GX3zzre2_uRhzNjIWAhDeC5APepsGE-GNLInYmiYEhepBDsRBypJSTm02gyrIBTaHXwFuheezbUbro6oMhnzy6GrNI9ENmlkA6-N85u6eYHtaWo8ystQ3QZ9q-uyDBj2UYu9j0msYDmY1L_QjBQI5f3qk5ZJy2r9pk_vyXJ7Hk5FMpgv"/>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-6 md:px-12 bg-neutral-100 dark:bg-neutral-900 spacing-16 gap">
+<div class="flex flex-col md:flex-row justify-between items-start w-full max-w-[1920px] mx-auto">
+<div class="mb-12 md:mb-0">
+<div class="text-lg font-black tracking-tighter text-black dark:text-white font-['Space_Grotesk'] mb-4">CURATOR</div>
+<p class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400">© 2024 CURATOR. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap gap-x-16 gap-y-8">
+<div class="flex flex-col gap-4">
+<span class="font-['Inter'] text-xs tracking-widest uppercase text-black dark:text-white font-bold">Community</span>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">Newsletter</a>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-['Inter'] text-xs tracking-widest uppercase text-black dark:text-white font-bold">Social</span>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">Instagram</a>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">TikTok</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

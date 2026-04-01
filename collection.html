@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#474747",
+              "outline": "#777777",
+              "tertiary-fixed": "#5e5e5e",
+              "on-tertiary-container": "#ffffff",
+              "on-secondary-container": "#1b1c1c",
+              "background": "#f9f9f9",
+              "primary-container": "#3b3b3b",
+              "on-background": "#1a1c1c",
+              "surface-tint": "#5e5e5e",
+              "on-error": "#ffffff",
+              "tertiary-container": "#747474",
+              "tertiary": "#3b3b3b",
+              "on-primary-container": "#ffffff",
+              "on-tertiary-fixed-variant": "#e2e2e2",
+              "on-secondary-fixed-variant": "#3c3b3b",
+              "inverse-surface": "#2f3131",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-tertiary": "#e2e2e2",
+              "error": "#ba1a1a",
+              "surface": "#f9f9f9",
+              "surface-dim": "#dadada",
+              "surface-container-low": "#f3f3f3",
+              "secondary-container": "#d6d4d3",
+              "on-primary-fixed-variant": "#e2e2e2",
+              "on-tertiary-fixed": "#ffffff",
+              "surface-container-high": "#e8e8e8",
+              "surface-variant": "#e2e2e2",
+              "on-secondary": "#ffffff",
+              "on-primary": "#e2e2e2",
+              "tertiary-fixed-dim": "#474747",
+              "outline-variant": "#c6c6c6",
+              "primary-fixed": "#5e5e5e",
+              "primary": "#000000",
+              "surface-container-highest": "#e2e2e2",
+              "on-primary-fixed": "#ffffff",
+              "inverse-primary": "#c6c6c6",
+              "inverse-on-surface": "#f1f1f1",
+              "primary-fixed-dim": "#474747",
+              "surface-container": "#eeeeee",
+              "surface-bright": "#f9f9f9",
+              "on-surface": "#1a1c1c",
+              "error-container": "#ffdad6",
+              "on-error-container": "#410002",
+              "secondary": "#5f5e5e",
+              "secondary-fixed": "#c8c6c5",
+              "secondary-fixed-dim": "#adabaa"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+            font-family: 'Inter', sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px #1a1c1c;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-50 dark:bg-neutral-950 no-border transition-colors duration-300">
+<div class="flex justify-between items-center w-full px-6 py-8 md:px-12 max-w-[1920px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-black dark:text-white font-['Space_Grotesk'] uppercase">
+                CURATOR
+            </div>
+<div class="hidden md:flex gap-10">
+<a class="text-black dark:text-white font-bold border-b-2 border-black dark:border-white pb-1 font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-sm transition-all Active: scale-95 duration-100" href="#">Collections</a>
+<a class="text-neutral-500 dark:text-neutral-400 font-medium font-['Space_Grotesk'] tracking-tighter uppercase text-sm hover:text-black dark:hover:text-white transition-all Active: scale-95 duration-100" href="#">About</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-black dark:text-white">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-[1920px] mx-auto">
+<!-- Hero Section -->
+<header class="mb-24">
+<h1 class="font-headline text-[12vw] md:text-[8rem] leading-[0.85] font-black tracking-tighter uppercase mb-8">
+                ESSENTIAL<br/>ELEMENTS
+            </h1>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+<p class="max-w-md font-body text-on-surface-variant text-lg leading-relaxed">
+                    A curated selection of monochromatic foundational garments. Designed for longevity, constructed with precision, and stripped of all excess.
+                </p>
+<div class="font-label text-xs uppercase tracking-[0.2em] text-outline">
+                    Spring / Summer 2024 Curation
+                </div>
+</div>
+</header>
+<!-- Product Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-24 md:gap-x-12">
+<!-- Product 01 -->
+<article class="group relative flex flex-col">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="w-full h-full object-cover grayscale brightness-105 contrast-95 transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist studio shot of a crisp white heavyweight cotton t-shirt hanging against a neutral grey concrete wall with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd-x92NFr1Irf1CTlFy8NUaQKnT1J3p-KdgC3xw2nAIJm8JxU41jymgeYZPWzQpFw4zq4CdRcq_fgS_NhG68BMN-lXJJR2QRxnUsvQ8l6TLQXpZfpmqYcEpNYuvHDVW55GdmUrWXc5fhESOqa1W3H-fOSYDr4Dihczi1l2fRoeHTb-QsA_S3CbHZAn0J4A2MFs-uWrBCVpv8_M_Y98KmUG_EOUcl5v7CxoWMCerM8Cg3wlwBAuYXKjilZxBZoLA4cVl-ezVHorXQeC"/>
+<div class="absolute top-4 left-4 font-label text-[0.65rem] tracking-widest uppercase bg-surface-container-lowest px-3 py-1 bg-opacity-80 backdrop-blur-md">
+                        001 / CORE
+                    </div>
+</div>
+<div class="flex justify-between items-start mb-8">
+<div>
+<h2 class="font-headline text-2xl font-bold tracking-tighter uppercase mb-1">Heavy Box Tee</h2>
+<p class="font-label text-xs text-outline tracking-widest uppercase">Style: Oversized 300GSM</p>
+</div>
+<div class="font-body font-medium">
+                        $85.00
+                    </div>
+</div>
+<button class="w-full py-5 bg-primary text-on-primary font-label font-bold uppercase tracking-widest text-xs transition-colors hover:bg-primary-fixed active:scale-[0.98]">
+                    INTERESTED
+                </button>
+</article>
+<!-- Product 02 -->
+<article class="group relative flex flex-col mt-12 md:mt-24">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Direct view of a matte black technical fabric t-shirt on a minimalist white background with architectural harsh lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQK7Y1QsuVcuKuFatPoOMixJTnyA6swgGpYuMOBvJ4i63xrSifppiTBs9L3yt_d0F1y3CmQCzvQECqOeW1PZ1760mtUzwlukd3n857Byh8z61M6WHDvSrBBhlo8zO44K1hHpBtpb3OCEjWPfRL96hgzyzlywlQAMPxB9W1B5Om8kQYDk1JTi0JgDTv2sISJaa52XStdtUPfOn-30ITSZAg1hoK4ginjIIuGRaAGcnfYsMHBMpFANdqMbfAx_amEc2nbTUViwBqFI8W"/>
+<div class="absolute top-4 left-4 font-label text-[0.65rem] tracking-widest uppercase bg-surface-container-lowest px-3 py-1 bg-opacity-80 backdrop-blur-md">
+                        002 / CORE
+                    </div>
+</div>
+<div class="flex justify-between items-start mb-8">
+<div>
+<h2 class="font-headline text-2xl font-bold tracking-tighter uppercase mb-1">Carbon Shell</h2>
+<p class="font-label text-xs text-outline tracking-widest uppercase">Style: Tailored Synthetic</p>
+</div>
+<div class="font-body font-medium">
+                        $110.00
+                    </div>
+</div>
+<button class="w-full py-5 bg-primary text-on-primary font-label font-bold uppercase tracking-widest text-xs transition-colors hover:bg-primary-fixed active:scale-[0.98]">
+                    INTERESTED
+                </button>
+</article>
+<!-- Product 03 -->
+<article class="group relative flex flex-col">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="w-full h-full object-cover grayscale brightness-90 transition-transform duration-700 group-hover:scale-105" data-alt="Faded charcoal grey vintage-wash cotton t-shirt draped over a brutalist concrete block in a sun-drenched industrial space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZL9uXIKFlir4kTMN9NVtK47LSJEHo0J1D0svg830UGkbStjbfxrVWHVMQkc8PCeFx42zP7YAAFGVJkkJq7sggrez57PsMam_GDU8yJXwg0hSGmmI1PwmMG09Bh6i3XtMGkM-o4ATL3prue1Z4SUFxvVIlM-HnUtgHrRK6p7iZRmQo3wgbrpwGSTCHPqFdkowmMFyNeLk35p07pInbIntfgFbvXY48vaBnlnikXslgR2QpYazNuYGfdIaSxfkFvWJeyIC9RjmiqklQ"/>
+<div class="absolute top-4 left-4 font-label text-[0.65rem] tracking-widest uppercase bg-surface-container-lowest px-3 py-1 bg-opacity-80 backdrop-blur-md">
+                        003 / ARCHIVE
+                    </div>
+</div>
+<div class="flex justify-between items-start mb-8">
+<div>
+<h2 class="font-headline text-2xl font-bold tracking-tighter uppercase mb-1">Ghost Wash</h2>
+<p class="font-label text-xs text-outline tracking-widest uppercase">Style: Relaxed Vintage</p>
+</div>
+<div class="font-body font-medium">
+                        $95.00
+                    </div>
+</div>
+<button class="w-full py-5 bg-primary text-on-primary font-label font-bold uppercase tracking-widest text-xs transition-colors hover:bg-primary-fixed active:scale-[0.98]">
+                    INTERESTED
+                </button>
+</article>
+<!-- Product 04 -->
+<article class="group relative flex flex-col lg:-mt-24">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Abstract close-up of high-quality white cotton fabric texture with sharp directional lighting creating deep geometric shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-SrzXUuAQREDNkiGuUKopjI3CLqofEVKIjiqYOLSPjLchxEGZ1CX6MvDKGPXs-RVfN52vdhZvxx51bH3vKTiucm5mKuyIdl4HDiNQEwl-PEIp4HOCYFePlzPpgDQlNiQTAcaxNnppcm_wF9NuVRBnUk_ozSOPdpn1mScn3JSIZCRVCwFQ8T5zwjUMpn1BEUJOAIXmhUhYWutzH7nk1Wpj1Z_nNRLvU_-AnJWgdIDz0OtL33eHvdyoiSrwlZkc4pF-phsPNqZLaEQg"/>
+<div class="absolute top-4 left-4 font-label text-[0.65rem] tracking-widest uppercase bg-surface-container-lowest px-3 py-1 bg-opacity-80 backdrop-blur-md">
+                        004 / CORE
+                    </div>
+</div>
+<div class="flex justify-between items-start mb-8">
+<div>
+<h2 class="font-headline text-2xl font-bold tracking-tighter uppercase mb-1">The Mock Neck</h2>
+<p class="font-label text-xs text-outline tracking-widest uppercase">Style: High-Collar Slim</p>
+</div>
+<div class="font-body font-medium">
+                        $90.00
+                    </div>
+</div>
+<button class="w-full py-5 bg-primary text-on-primary font-label font-bold uppercase tracking-widest text-xs transition-colors hover:bg-primary-fixed active:scale-[0.98]">
+                    INTERESTED
+                </button>
+</article>
+<!-- Product 05 -->
+<article class="group relative flex flex-col mt-12 md:mt-0">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Folded black premium cotton t-shirts stacked in a precise vertical column against a soft grey background with sharp edges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDvA_oQssjq_qRfm0DRP4uNhJj8muG6fX2BpZMlyzVlNkIJGB_njuk6OUaCLS8o_BM3QwJo_v6EGRjO0rPgUibrIXFVl2pSaf04tr7nq1kghAcIQXKRurWdGv6eY5yEQQPJn2dQ_AXImNWYyBLzyNpx3LRKnUurSeXeuVA6Pu_Y16daCeUoJv2bQ7NBM4sMOWVgGihCIlhYGVTKJ715x689w2QjtCTkDe4TuE1zWNg8tU6WUMFGeOicpeVYlOYA2zsmayDPnZGxvpi"/>
+<div class="absolute top-4 left-4 font-label text-[0.65rem] tracking-widest uppercase bg-surface-container-lowest px-3 py-1 bg-opacity-80 backdrop-blur-md">
+                        005 / LAB
+                    </div>
+</div>
+<div class="flex justify-between items-start mb-8">
+<div>
+<h2 class="font-headline text-2xl font-bold tracking-tighter uppercase mb-1">Modular Tee</h2>
+<p class="font-label text-xs text-outline tracking-widest uppercase">Style: Multi-Layer Knit</p>
+</div>
+<div class="font-body font-medium">
+                        $145.00
+                    </div>
+</div>
+<button class="w-full py-5 bg-primary text-on-primary font-label font-bold uppercase tracking-widest text-xs transition-colors hover:bg-primary-fixed active:scale-[0.98]">
+                    INTERESTED
+                </button>
+</article>
+<!-- Product 06 -->
+<article class="group relative flex flex-col mt-24">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist long-sleeve light grey base layer t-shirt hanging on a thin black wire hanger against a stark white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf2BaK7xU06fVJ95tCq1ZkvqwrfWrvJ6xG9IPH-tXKstvBGls9LKjpflCQZXzx9BxFRb40Y_3GaERLhW0wzvUo07ZBBVf1qhDopmNkfPSeKFvqX1Du6o_npVuwNhU59BaR5P4zVijQWm5vLsW3iwOopwslb4V_AFz9EQc8G9Tdp_8sGrdIh5DiCCzxJuDzfYdFBHHgwMULBnXnTGFGeoX7WCOEZ213fLUo62VvZwSZv87C9WJSzXQOPIU4FkrKlh_m1Bj3Z-vY_K0F"/>
+<div class="absolute top-4 left-4 font-label text-[0.65rem] tracking-widest uppercase bg-surface-container-lowest px-3 py-1 bg-opacity-80 backdrop-blur-md">
+                        006 / CORE
+                    </div>
+</div>
+<div class="flex justify-between items-start mb-8">
+<div>
+<h2 class="font-headline text-2xl font-bold tracking-tighter uppercase mb-1">Foundation L/S</h2>
+<p class="font-label text-xs text-outline tracking-widest uppercase">Style: Compression Base</p>
+</div>
+<div class="font-body font-medium">
+                        $70.00
+                    </div>
+</div>
+<button class="w-full py-5 bg-primary text-on-primary font-label font-bold uppercase tracking-widest text-xs transition-colors hover:bg-primary-fixed active:scale-[0.98]">
+                    INTERESTED
+                </button>
+</article>
+</section>
+<!-- Newsletter Subscription (Technical Input style) -->
+<section class="mt-48 mb-24 max-w-2xl">
+<h3 class="font-headline text-3xl font-bold tracking-tighter uppercase mb-6">Access the Archive</h3>
+<p class="font-body text-on-surface-variant mb-12">Register for early notification on upcoming drops and curated limited editions.</p>
+<form class="flex flex-col gap-4">
+<input class="bg-transparent border-0 border-b border-outline py-4 font-label text-xs uppercase tracking-widest focus:ring-0 focus:border-primary transition-all" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="self-start mt-4 font-label text-xs font-bold uppercase tracking-widest border-b-2 border-primary pb-1 hover:text-outline hover:border-outline transition-all" type="submit">JOIN CURATION</button>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-6 md:px-12 bg-neutral-100 dark:bg-neutral-900">
+<div class="flex flex-col md:flex-row justify-between items-start w-full gap-16 md:gap-0">
+<div>
+<div class="text-lg font-black tracking-tighter text-black dark:text-white font-['Space_Grotesk'] uppercase mb-4">
+                    CURATOR
+                </div>
+<div class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400">
+                    © 2024 CURATOR. ALL RIGHTS RESERVED.
+                </div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 md:gap-16">
+<div class="flex flex-col gap-4">
+<span class="font-label text-[0.65rem] tracking-[0.2em] text-outline uppercase mb-2">Connect</span>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">Instagram</a>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">TikTok</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label text-[0.65rem] tracking-[0.2em] text-outline uppercase mb-2">Legal</span>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">Newsletter</a>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all underline" href="#">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

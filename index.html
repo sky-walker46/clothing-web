@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitch Project Hub - The Digital Curator</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+            margin: 0;
+            padding: 40px;
+        }
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .card h2 {
+            margin-top: 0;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #000000;
+            color: #e2e2e2;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+        }
+        .card a:hover {
+            background: #5e5e5e;
+        }
+        .design-system {
+            background: #eeeeee;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .design-system a {
+            color: #000;
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Importing fonts required by the Design System -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Screens Hub</h1>
+        <p>Welcome to the locally hosted interface for your Stitch project screens.</p>
+        
+        <div class="design-system">
+            <h2>Core Essentialist Design System</h2>
+            <p>The base design tokens, "anti-design" aesthetics, monochrome colors, and typography patterns are defined in this JSON file:</p>
+            <p><a href="/design_system.json">View design_system.json</a></p>
+        </div>
+
+        <div class="card">
+            <h2>Home - Curator</h2>
+            <p>The main landing page featuring structural silhouettes and a curated editorial experience.</p>
+            <a href="/home.html">View Screen</a>
+        </div>
+
+        <div class="card">
+            <h2>Collection - Curator</h2>
+            <p>The product grid interface, emphasizing extreme whitespace and asymmetrical layouts.</p>
+            <a href="/collection.html">View Screen</a>
+        </div>
+
+        <div class="card">
+            <h2>Product Detail - Curator</h2>
+            <p>A gallery-like installation page. Detailed showcase of an individual curated piece.</p>
+            <a href="/product_detail.html">View Screen</a>
+        </div>
+
+        <div class="card">
+            <h2>My Interests - Curator</h2>
+            <p>A wish-list or personalized curation board showcasing saved items.</p>
+            <a href="/my_interests.html">View Screen</a>
+        </div>
+    </div>
+</body>
+</html>
